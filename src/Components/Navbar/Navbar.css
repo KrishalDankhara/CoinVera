@@ -46,6 +46,39 @@
     color: white;
 }
 
+.active {
+    color: yellowgreen;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellowgreen;
+}
+
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgba(50, 50, 50, 0.850);
+    border-radius: 1rem;
+}
+
+.listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
 @media (max-width: 900px) {
     .navbar{
         padding: 20px 8%;
@@ -58,5 +91,8 @@
     }
     .navbar ul{
         display: none;
+    }
+    .mobMenu {
+        display: flex;
     }
 }

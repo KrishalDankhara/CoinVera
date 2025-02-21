@@ -158,9 +158,15 @@
     }
   }
   
-  @media (max-width: 500px) {
+  @media (max-width: 515px) {
     .table-layout div img {
-      width: 25px;
+      width: 20px;
+    }
+    .table-layout div p {
+      font-size: 10px;
+    }
+    .table-layout p {
+      font-size: 10px;
     }
     .table-layout {
       font-size: 13px;
@@ -182,9 +188,15 @@
     }
   }
   
-  @media (max-width: 333px) {
+  @media (max-width: 360px) {
     .table-layout div img {
-      width: 15px;
+      width: 20px;
+    }
+    .table-layout div p {
+      font-size: 10px;
+    }
+    .table-layout p {
+      font-size: 7px;
     }
     .table-layout {
       font-size: 12px;
