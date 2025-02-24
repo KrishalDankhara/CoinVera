@@ -35,17 +35,5 @@ coinvera/
 └── vercel.json         # Deployment configuration
 ```
 
-## 🤝 Contributing
 
-We welcome contributions to enhance CoinVera! Feel free to fork the repository, submit issues, or create pull requests. Together, we can build a comprehensive crypto analytics platform.
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
-## 📬 Contact
-
-For questions or feedback, please reach out at [your-email@example.com](mailto:your-email@example.com).
-
-*Note: Ensure to replace `[your-email@example.com]` with your actual contact email.*
 
