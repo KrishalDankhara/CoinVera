@@ -1,4 +1,5 @@
-# 🚀 CoinVera
+# 🚀![image](https://github.com/user-attachments/assets/dc24c1c9-d2a4-4606-b7d4-cc18033521a0)
+ CoinVera
 
 ## 🌍 Welcome to CoinVera!
 
