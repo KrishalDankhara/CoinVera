@@ -8,7 +8,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-          const response = await fetch(`https://api.allorigins.win/raw?url=https://cryptopanic.com/api/v1/posts/?auth_token=bedd95a4b2a5197695b57155a63c617c814dd0e8&public=true`); // allorigins.win is a public CORS proxy server by using it we can direct fetches data from cryptopanic site without using nodemon server.js
+          const response = await fetch(`https://api.allorigins.win/raw?url=https://cryptopanic.com/api/v1/posts/?auth_token=bedd95a4b2a5197695b57155a63c617c814dd0e8&public=true`); // allorigins.win is a public CORS proxy server by using it we can direct fetches data from cryptopanic site without using nodemon 
           const data = await response.json();
   
           console.log("Fetched data:", data);
@@ -43,8 +43,12 @@ const Blog = () => {
               <div key={index} className="news-card">
                 <h2>{article.title}</h2>
                 <p>{article.domain}</p>
-                <a href={article.url} target="_blank" rel="noopener noreferrer">
-                  Read More
+                <a 
+                  href={`https://${article.domain}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                Read More
                 </a>
               </div>
             ))
