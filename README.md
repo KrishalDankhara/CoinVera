@@ -1,4 +1,4 @@
-# 🚀 <img src='public/logo.png' alt='CoinVera Logo' width='150' height='150'>
+## 🚀 <img src='public/logo.png' alt='CoinVera Logo' width='10' height='10'>
  CoinVera
  
 ## 🌍 Welcome to CoinVera!
