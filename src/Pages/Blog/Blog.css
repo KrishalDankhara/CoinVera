@@ -86,3 +86,14 @@
     text-decoration: underline;
   }
   
+  @media (max-width: 420px) {
+    h1{
+      font-size: 2rem;
+    }
+  } 
+
+  @media (max-width: 342px) {
+    h1{
+      font-size: 1.75rem;
+    }
+  } 
