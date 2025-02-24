@@ -1,6 +1,6 @@
-# 🚀![image](https://github.com/user-attachments/assets/dc24c1c9-d2a4-4606-b7d4-cc18033521a0)
+# 🚀 <img src='public/logo.png' alt='CoinVera Logo' width='150' height='150'>
  CoinVera
-
+ 
 ## 🌍 Welcome to CoinVera!
 
 **CoinVera** is your go-to platform for real-time cryptocurrency analytics. Designed for traders, investors, and enthusiasts, CoinVera offers up-to-date market data, interactive charts, and the latest news to help you navigate the crypto landscape effectively.
