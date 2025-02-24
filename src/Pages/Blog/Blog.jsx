@@ -7,35 +7,34 @@ const Blog = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
-        try {
-            const response = await fetch("http://localhost:5000/news"); // this request comes from server.js file where  Crypto News API Key is taken from CryptoPanic website and use it in server.js
-            const data = await response.json();
-
-            console.log("Fetched data:", data); // Debugging
-
-            if (data && data.results) {
-                setNews(data.results);
-            } else {
-                setNews([]); // No valid news data
-            }
-
-            setLoading(false);
-        } catch (error) {
-            console.error("Error fetching news:", error);
-            setLoading(false);
-        }
-    };
-
+      try {
+          const response = await fetch(`https://api.allorigins.win/raw?url=https://cryptopanic.com/api/v1/posts/?auth_token=bedd95a4b2a5197695b57155a63c617c814dd0e8&public=true`); // allorigins.win is a public CORS proxy server by using it we can direct fetches data from cryptopanic site without using nodemon server.js
+          const data = await response.json();
+  
+          console.log("Fetched data:", data);
+  
+          if (data && data.results) {
+              setNews(data.results);
+          } else {
+              setNews([]);
+          }
+  
+          setLoading(false);
+      } catch (error) {
+          console.error("Error fetching news:", error);
+          setLoading(false);
+      }
+  };
+  
     fetchNews();
-}, []);
-
+  }, []);
 
   return (
     <div className="blog-container">
       <h1>Crypto Market News</h1>
       {loading ? (
-        <div className='spinner'>
-            <div className="spin"></div>
+        <div className="spinner">
+          <div className="spin"></div>
         </div>
       ) : (
         <div className="news-list">

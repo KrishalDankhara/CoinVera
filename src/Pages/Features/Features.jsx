@@ -112,8 +112,10 @@ const Features = () => {
   
             return { date, volatility: percentageChange.toFixed(2) };
           })
-          .filter((data) => data); // Remove null values
-  
+          .filter((data) => data) // Remove null values
+          .filter((_, index) => index % 2.5 === 0);
+
+
         setVolatilityData(formattedVolatilityData);
       } catch (error) {
         console.error("Error fetching volatility data:", error);
@@ -274,14 +276,13 @@ const Features = () => {
           <LineChart data={volatilityData} margin={{ top: 10, right: 10, left: 10, bottom: 40 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis
-              dataKey="date"
-              angle={-45}
-              textAnchor="end"
-              interval={4}
-              tickFormatter={(date) =>
-                new Date(date).toLocaleDateString()
-              }
-            />
+  dataKey="date"
+  tick={{ fill: "#fff", fontSize: 12 }}
+  angle={-45}
+  textAnchor="end"
+  tickFormatter={(date) => new Date(date).toLocaleDateString("en-US", { month: "short", day: "2-digit" })}
+  interval="preserveStartEnd"
+/>
             <YAxis />
             <Tooltip />
             <Line
