@@ -35,5 +35,10 @@ coinvera/
 └── vercel.json         # Deployment configuration
 ```
 
+## 🌐 Visit CoinVera
+
+Explore the platform live at: [CoinVera](https://coinvera.vercel.app/)
+
+
 
 
